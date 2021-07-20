@@ -1,0 +1,553 @@
+/* Font */
+@font-face {
+    font-family: 'poppinsbold_italic';
+    src: url('font/Poppins/poppins-bolditalic-webfont.woff2') format('woff2'),
+        url('font/Poppins/poppins-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('font/Poppins/poppins-medium-webfont.woff2') format('woff2'),
+        url('font/Poppins/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppinsmedium";
+    scroll-behavior: smooth;
+}
+
+/* Navigasi */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+
+}
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.103);
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: rgba(10, 63, 163, 0);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: -20px;
+    margin-left: -10px;
+    transition: .4s;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(10, 63, 163, 0);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: -20px;
+    margin-left: -10px;
+    transition: .5s;
+
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+header .logo:hover {
+    background-color: rgb(10, 63, 163);
+}
+
+header ul li a:hover {
+    background-color: rgb(10, 63, 163);
+}
+
+/* Akhir Navigasi */
+
+
+/* Banner */
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(img/Banner3.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h2 span .kapital-biru {
+    color: rgb(10, 63, 163);
+}
+
+.banner h3 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .16em;
+}
+
+.btn {
+    position: relative;
+    background-color: rgb(10, 63, 163);
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 900px;
+    transition: .5s;
+
+}
+
+
+
+/* Akhir Banner */
+
+/* About */
+.heading {
+    width: 100%;
+    text-align: center;
+    color: #111;
+    margin-bottom: 30px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.contentbx {
+    padding-right: 30px;
+}
+
+.contentbx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about .content p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+.w50 img {
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.507);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Akhir About */
+
+/* Services */
+.services {
+    background-color: black;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicebx p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.services .content .servicebx {
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.services .content .servicebx img {
+    max-width: 80px;
+    filter: invert(1);
+    padding-bottom: 10px;
+    transform: rotatey(1);
+    transition: .5s;
+}
+
+.services .content .servicebx h2 {
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.services .content .servicebx:hover {
+    background-color: #0d2575;
+}
+
+.services .content .servicebx:hover img {
+    transform: rotatey(360deg);
+}
+
+.services .content .servicebx:hover h2 {
+    font-size: 23px;
+    font-weight: 800px;
+}
+
+/* Gallery */
+.gallery .content-photo .photobx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .heading p {
+    padding-top: 10px;
+}
+
+.gallery .content-photo .gallerybx {
+    width: 50%;
+    margin: 20px 10px 0 0;
+}
+
+.gallery .content-photo .gallerybx img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.btn-gallery {
+    padding: .7rem 2rem;
+    background: rgb(10, 63, 163);
+    border: none;
+    color: #fff;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.gallerybx {
+    display: none;
+}
+
+.gallery .content-photo .gallerybx:target img {
+    width: 100%;
+}
+
+/* Akhir Gallery */
+
+/* Contact */
+.contact {
+    background-color: black;
+}
+
+.formbx {
+    min-width: 60%;
+}
+
+.formbx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbx form h3,
+.contactinfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbx form input,
+.formbx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formbx form textarea {
+    min-height: 200px;
+}
+
+.formbx form input::placeholder,
+.formbx form textarea::placeholder {
+    color: #999;
+}
+
+.formbx form input[type="submit"] {
+    max-width: 100px;
+    background-color: #0d2575;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactinfo {
+    min-width: 40%;
+}
+
+.contactinfobx {
+    position: relative;
+}
+
+.contactinfobox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactinfobox .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactinfobox .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.contactinfobox .box .text h3 {
+    color: #2857f0;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Akhir contact */
+
+/* Copyright */
+.copyright {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Akhir Copyright */
+
+/* Responsive */
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        transition: .5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.219);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(icon/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background: url(icon/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .contentbx h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .w50 {
+        margin-bottom: 20px;
+    }
+
+    .services .content .servicesbx {
+        margin: 10px;
+    }
+
+    .gallery .content .gallerybx {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactinfo {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .banner {
+        padding: 150px 40px 100px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+}
+
+/* Akhir Responsive */
